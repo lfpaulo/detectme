@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html manifest="detectMe.appcache">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title id="winTitle"></title>
+        <link rel="icon" 
+            type="image/jpg" 
+            href="images/detectMe.png">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/site.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="panel panel-default" style="margin-top: 20px;">
+                <div class="panel-heading">
+                    <h3 id="title"></h3>
+                    <h6 id="titleDesc"></h6>
+                    <hr/>
+                    <h4 id="subTitle"></h4>
+                    <div id="cultureToolbar" class="row">
+                        <div class="btn-group btn-group-xs pull-right margin-right-10px" role="group" aria-label="...">
+                            <button type="button" onclick="changeCultureClick('en-GB')" class="btn btn-default"><img src="./images/USAFlag.png" class="img-responsive" alt="USA flag"></button>
+                            <button type="button" onclick="changeCultureClick('pt-PT')" class="btn btn-default"><img src="./images/portugueseFlag.png" class="img-responsive" alt="Portuguese flag"></button>
+                            <button type="button" onclick="changeCultureClick('es-ES')" class="btn btn-default"><img src="./images/spanishFlag.png" class="img-responsive" alt="Spanish flag"></button>
+                            <button type="button" onclick="changeCultureClick('fr-FR')" class="btn btn-default"><img src="./images/frenchFlag.png" class="img-responsive" alt="French flag"></button>
+                            <button type="button" onclick="changeCultureClick('de-DE')" class="btn btn-default"><img src="./images/germanyFlag.png" class="img-responsive" alt="Germany flag"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div id="data-container"></div>
+                </div>
+            </div>
+        </div>
+        <script src="js/platform.js"></script>
+        <script src="js/translations.js"></script>
+        <script src="js/detectMe.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
